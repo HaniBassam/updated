@@ -11,16 +11,22 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    background-color: #92ee92;
 }
+
 .video-container h1 {
     color: black;
-    margin-top: -40px;
+    margin-top: -35px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 550;
+}
+.video-container h1:hover{
+    background-color: rgb(255, 246, 122);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* - ------------------Navigations bar---------------------------------------------------------------------- */
@@ -32,13 +38,23 @@
     margin-top: 15px;
 }
 
+.logo a{
+    font-size: 20px;
+    position: inherit;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
 .logo:hover {
     /* Ændre størrelse på hover */
     transform: scale(1.1);
-}
+    }
+
+
 
 .background-color {
-    background-color: #ffffff;
+    background-color: rgb(255, 246, 122);
 }
 
 nav {
@@ -152,16 +168,20 @@ nav ul li a:hover {
     /* line-height: 1.6; */
     /* padding: 60px; */
     margin-top: -20px;
+    background-color: rgb(255, 246, 122);;
 }
 
 .p2 {
-    color: #999f99;
+    color: #010101;
     font-size: 35px;
     font-weight: 900;
     line-height: 1.6;
     padding-top: 60px;
     position: relative;
     margin-top: -80px;
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(255, 246, 122);;
 }
 
 /* - ---------------------------rolling cans------------------------------------------------------------- */
@@ -209,10 +229,9 @@ h1 {
 p {
     margin-right: 60px;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: 900;
-    line-height: 1.6;
-    padding: 60px;
+    gap: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -220,7 +239,7 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 60px 20px;
-    background-color: #98ab98;
+    background-color: #92ee92;
 }
 
 .p3 p {
@@ -231,9 +250,8 @@ p {
 
 .p3 h1 {
     padding: 10px;
-    color: #92ee92;
+    color: rgb(255, 246, 122);
     font-size: 60.5px;
-
 }
 .cane4{
     width: 100px;
@@ -241,27 +259,68 @@ p {
     float: right;
 }
 
+.cane3{
+    width: 100px;
+    float: right;
+    margin-right: -190px;
+    margin-top: 95px;
+    position: relative;
+    z-index: 99;
+}
+
 
 /* - -----------------------pics----------------------------------------------------------------- */
 
 .doctor {
-    width: 800px;
+    width: 600px;
     height: auto;
     float: right;
+    margin-top: 180px;
 
 }
 
 .doctor-small {
-    width: 400px;
+    width: 300px;
     height: auto;
     float: right;
 }
 
 .can6 {
     width: 90px;
-    margin-top: -550px;
+    margin-top: -750px;
     float: right;
 }
+
+/* footer start */
+
+.footer {
+    background-color: #333; /* Bakgrunnsfarge for footeren */
+    color: #fff; /* Tekstfarge for footeren */
+    padding: 20px; /* Padding for innholdet i footeren */
+    text-align: center; /* Sentrering av teksten */
+    bottom: 0; /* Plasserer footeren nederst */
+    left: 0; /* Plasserer footeren helt til venstre */
+    width: 100%; /* Sørger for at footeren strekker seg over hele bredden */
+}
+
+.footer-content {
+    max-width: 1200px; /* Maks bredde for innholdet i footeren */
+    margin: 0 auto; /* Sentrering av innholdet i footeren */
+}
+
+.tekst-container {
+    line-height: 2.2;
+    text-align: left;
+}
+
+.tekst {
+    display: inline-block; /* Plasserer tekstene ved siden av hverandre */
+    /* Juster eventuelle andre stiler etter behov */
+}
+
+
+
+/* footer slut */
 
 /* - ---------------------------------------------------------------------------------------- */
 
