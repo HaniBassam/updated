@@ -1,32 +1,30 @@
 /* Global reset */
-
 * {
-    padding: 0%;
     box-sizing: border-box;
     margin: 0;
     text-align: center;
 }
 
-.video-container {
+.bg-video {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    background-color: #92ee92;
 }
 
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(19, 152, 35);
+}
+
+
 .video-container h1 {
-    color: black;
+    color: rgb(231, 199, 60);
     margin-top: -35px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    font-weight: 550;
-}
-.video-container h1:hover{
-    background-color: rgb(255, 246, 122);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 15%;
+    left: 10%;
+    font-size: 5rem;
+    width: 90%;
 }
 
 /* - ------------------Navigations bar---------------------------------------------------------------------- */
@@ -38,31 +36,27 @@
     margin-top: 15px;
 }
 
-.logo a{
+.logo a {
     font-size: 20px;
     position: inherit;
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-
 .logo:hover {
-    /* Ændre størrelse på hover */
     transform: scale(1.1);
-    }
-
-
+}
 
 .background-color {
-    background-color: rgb(255, 246, 122);
+    background-color: #202e1f;
 }
 
 nav {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #222522;
+    background-color: #202e1f;
 }
 
 nav ul {
@@ -73,7 +67,6 @@ nav ul {
     right: 10px;
     flex-direction: row;
 }
-
 
 nav ul li a {
     color: rgb(255, 255, 255);
@@ -89,23 +82,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(255, 246, 122);
+    color: rgb(239, 235, 28);
     line-height: 1.1875rem;
-    /* display: block; */
     text-decoration: navy;
 }
 
 /* - ---------------------------------------------------------------------------------------- */
-
-
-.overlay-text h1 {
-    display: block;
-    font-size: 4rem;
-    margin-top: -810px;
-    text-align: center;
-    color: rgb(81, 81, 17);
-    transition: 0.5s;
-}
 
 
 /* - ---------------------Rolling cans------------------------------------------------------------------- */
@@ -158,34 +140,28 @@ nav ul li a:hover {
 /* - --------------------------smag vores nye-------------------------------------------------------------- */
 
 
-
-
-
 .p1 {
-    color: #92ee92;
-    font-size: 50px;
+    color:rgb(88, 114, 130);
+    font-size: 70px;
     font-weight: 900;
-    /* line-height: 1.6; */
-    /* padding: 60px; */
     margin-top: -20px;
-    background-color: rgb(255, 246, 122);;
+    
 }
 
 .p2 {
-    color: #010101;
+    color: rgb(88, 114, 130);
     font-size: 35px;
     font-weight: 900;
     line-height: 1.6;
     padding-top: 60px;
     position: relative;
-    margin-top: -80px;
+    margin-top: -15px;
     width: 100%;
     height: 80vh;
-    background-color: rgb(255, 246, 122);;
+    background-color:#fffdd0;
 }
 
 /* - ---------------------------rolling cans------------------------------------------------------------- */
-
 
 .cane4 {
     width: 100%;
@@ -218,7 +194,6 @@ nav ul li a:hover {
 /* - ----------------------sundhed------------------------------------------------------------------ */
 
 h1 {
-    color: #ffffff;
     font-size: 45px;
     font-weight: 890;
     padding: 60px;
@@ -228,7 +203,7 @@ h1 {
 
 p {
     margin-right: 60px;
-    color: #ffffff;
+    color: rgb(231, 199, 60);
     font-size: 10px;
     font-weight: 900;
     gap: 10px;
@@ -238,28 +213,30 @@ p {
 .p3 {
     display: flex;
     justify-content: space-between;
-    padding: 60px 20px;
-    background-color: #92ee92;
+    padding: 40px 20px;
+    background-color:  #202e1f;
 }
 
 .p3 p {
     padding: 10px;
     font-size: 26.5px;
     text-align: left;
+    line-height: 1.6;
 }
 
 .p3 h1 {
     padding: 10px;
-    color: rgb(255, 246, 122);
+    color: rgb(231, 199, 60);
     font-size: 60.5px;
 }
-.cane4{
+
+.cane4 {
     width: 100px;
     margin: 30px;
     float: right;
 }
 
-.cane3{
+.cane3 {
     width: 100px;
     float: right;
     margin-right: -190px;
@@ -268,7 +245,6 @@ p {
     z-index: 99;
 }
 
-
 /* - -----------------------pics----------------------------------------------------------------- */
 
 .doctor {
@@ -276,7 +252,6 @@ p {
     height: auto;
     float: right;
     margin-top: 180px;
-
 }
 
 .doctor-small {
@@ -286,39 +261,79 @@ p {
 }
 
 .can6 {
-    width: 90px;
-    margin-top: -750px;
-    float: right;
+    width: 110px;
+ 
 }
 
 /* footer start */
 
 .footer {
-    background-color: #333; /* Bakgrunnsfarge for footeren */
-    color: #fff; /* Tekstfarge for footeren */
-    padding: 20px; /* Padding for innholdet i footeren */
-    text-align: center; /* Sentrering av teksten */
-    bottom: 0; /* Plasserer footeren nederst */
-    left: 0; /* Plasserer footeren helt til venstre */
-    width: 100%; /* Sørger for at footeren strekker seg over hele bredden */
-}
-
-.footer-content {
-    max-width: 1200px; /* Maks bredde for innholdet i footeren */
-    margin: 0 auto; /* Sentrering av innholdet i footeren */
-}
-
-.tekst-container {
-    line-height: 2.2;
-    text-align: left;
-}
-
-.tekst {
-    display: inline-block; /* Plasserer tekstene ved siden av hverandre */
-    /* Juster eventuelle andre stiler etter behov */
+    padding: 40px;
+    background-color: #fffdd0;
 }
 
 
+.social {
+    text-align: center;
+    padding: 25px;
+    color: rgb(88, 114, 130);
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid rgb(88, 114, 130);
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.social a:hover {
+    opacity: 0.9;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li a:hover {
+    opacity: 1;
+    color: rgb(88, 114, 130);
+}
+
+
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(88, 114, 130);
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+}
 
 /* footer slut */
 
@@ -327,13 +342,14 @@ p {
 @media screen and (max-width: 430px) {
     /* Styles for smartphones */
     .doctor {
-        width: 400px;
+        width: 90px;
     }
     .doctor-small {
-        width: 200px;
+        width: 90px;
         float: none;
     }
-    
+
+    s
     .p3 {
         display: block;
     }
@@ -374,8 +390,11 @@ p {
         width: 60px;
         margin-right: 10px;
     }
-}
 
-@media screen and (max-width: 725px) {
-    /* Styles for tablet and desktop. */
+    .cane3 {
+        width: 60px;
+        margin-right: -100px;
+        margin-top: 90px;
+        position: relative;
+    }
 }
